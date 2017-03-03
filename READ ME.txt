@@ -1,0 +1,21 @@
+The following are the requirements of the quiz.
+
+1. Create a database.
+
+2. Create 3 tables: 
+	- Table User has 2 columns:
+		+ id: is primary key, integer type and would be automatically increased.
+		+ name : name of user (text type)
+	
+	- Table Course has 2 columns:
+		+ id: is primary key, integer type and would be automatically increased.
+		+ title: title (or name) of the course (text type)
+
+	- Table Member has 3 columns:
+		+ user_id: integer type
+		+ course_id: integer type
+		+ role: integer type
+		(primary key is combination of user_id and course_id)
+
+3. Read data from JSON file roster_data.json then insert into above 3 tables.  
+(JSON file roster_data.json contains information of users: name, course and role id.)
